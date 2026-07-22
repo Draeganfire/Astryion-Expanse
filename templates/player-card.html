@@ -1,0 +1,82 @@
+<div class="nice-player-card">
+
+  <!-- TAB BAR -->
+  <nav class="tabs">
+    <a class="item" data-tab="picture">Picture</a>
+    <a class="item" data-tab="stats">Stats</a>
+    <a class="item" data-tab="powers">Powers</a>
+    <a class="item" data-tab="talents">Talents</a>
+    <a class="item" data-tab="identity">Identity</a>
+    <a class="item" data-tab="notes">Notes</a>
+  </nav>
+
+  <!-- TAB CONTENT -->
+  <section class="tab-content">
+
+    <!-- PICTURE TAB -->
+    <div class="tab picture" data-tab="picture">
+      <img src="{{actor.img}}" class="portrait">
+    </div>
+
+    <!-- STATS TAB -->
+    <div class="tab stats" data-tab="stats">
+      <h2>Stats</h2>
+      <div class="stats-grid">
+        {{#each system.stats as |stat key|}}
+          <div class="stat-row">
+            <span class="stat-name">{{stat.label}}</span>
+            <span class="stat-rank">{{stat.rank}}</span>
+            <span class="stat-value">{{stat.value}}</span>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <!-- POWERS TAB -->
+    <div class="tab powers" data-tab="powers">
+      <h2>Powers</h2>
+      <ul>
+        {{#each system.powers}}
+          <li>{{this.name}} ({{this.rank}})</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <!-- TALENTS TAB -->
+    <div class="tab talents" data-tab="talents">
+      <h2>Talents</h2>
+      <ul>
+        {{#each system.talents}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <!-- IDENTITY TAB -->
+    <div class="tab identity" data-tab="identity">
+      <h2>Identity</h2>
+      <div class="identity-grid">
+        <div><strong>Name:</strong> {{actor.name}}</div>
+        <div><strong>Callsign:</strong> {{system.callsign}}</div>
+        <div><strong>Ancestry:</strong> {{system.ancestry}}</div>
+        <div><strong>Species:</strong> {{system.species}}</div>
+        <div><strong>Heritage:</strong> {{system.heritage}}</div>
+        <div><strong>Background:</strong> {{system.background}}</div>
+        <div><strong>Class:</strong> {{system.class}}</div>
+        <div><strong>Level:</strong> {{system.level}}</div>
+        <div><strong>Deity:</strong> {{system.deity}}</div>
+        <div><strong>Homeworld:</strong> {{system.homeworld}}</div>
+        <div><strong>Port of Call:</strong> {{system.port}}</div>
+        <div><strong>Group Affiliation:</strong> {{system.affiliation}}</div>
+      </div>
+    </div>
+
+    <!-- NOTES TAB -->
+    <div class="tab notes" data-tab="notes">
+      <h2>Notes</h2>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </div>
+
+  </section>
+
+</div>
