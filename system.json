@@ -1,0 +1,26 @@
+{
+  "id": "astryion-expanse",
+  "title": "Astryion Expanse",
+  "description": "The official game system for the Astryion Expanse RPG.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Bill"
+    }
+  ],
+  "scripts": [
+    "scripts/sheet.js"
+  ],
+  "styles": [
+    "styles/sheet.css"
+  ],
+  "packs": [],
+  "template": "templates/player-card.html",
+  "url": "https://github.com/Draeganfire/Astryion-Expanse",
+  "manifest": "https://raw.githubusercontent.com/Draeganfire/Astryion-Expanse/main/system.json",
+  "download": "https://github.com/Draeganfire/Astryion-Expanse/archive/refs/heads/main.zip"
+}
