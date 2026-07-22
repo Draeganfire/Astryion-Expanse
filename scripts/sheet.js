@@ -2,7 +2,7 @@ class NICEPlayerCard extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["nice", "sheet", "player-card"],
-      template: "modules/nice-player-card/templates/player-card.html",
+      template: "modules/astryion-expanse/templates/player-card.html",
       width: 600,
       height: 700,
       tabs: [
@@ -16,7 +16,7 @@ class NICEPlayerCard extends ActorSheet {
   }
 }
 
-Actors.registerSheet("nice-player-card", NICEPlayerCard, {
+Actors.registerSheet("astryion-expanse", NICEPlayerCard, {
   types: ["character"],
   makeDefault: false
 });
