@@ -1,0 +1,18 @@
+{
+  "name": "nice-player-card",
+  "type": "module",
+  "title": "NICE Player Card",
+  "description": "A tabbed quick-reference character card for the N.I.C.E. System.",
+  "version": "1.0.0",
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "11",
+  "author": "Bill",
+  "scripts": ["scripts/sheet.js"],
+  "styles": ["styles/sheet.css"],
+  "esmodules": [],
+  "packs": [],
+  "languages": [],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
